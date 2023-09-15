@@ -2,6 +2,12 @@ const Service = () => {
   return (
     <>
       <h2>I am Service page.</h2>
+      <div className="form-control w-52">
+        <label className="cursor-pointer label">
+          <span className="label-text">Remember me</span>
+          <input type="checkbox" className="toggle toggle-secondary" checked />
+        </label>
+      </div>
       <div className="drawer">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content">
