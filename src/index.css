@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.heading{
+    @apply text-xl text-orange-500 py-3 text-center uppercase tracking-wide
+}
+.heading_title{
+    @apply text-4xl text-center uppercase tracking-wide font-bold leading-loose
+}
+
+.heading_p{
+    @apply text-center
+}

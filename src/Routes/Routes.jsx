@@ -22,6 +22,7 @@ import Service from "../Pages/Service/Service";
         {
           path:'/service',
           element:<Service/>,
+          loader: ()=>fetch('http://localhost:5000/services')
         }
       ]
     },
