@@ -31,7 +31,7 @@ const Service = () => {
         </h1>
       </div>
       {/* grid card make by map looping */}
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 space-y-4 py-6 ">
+      <div className="grid min-h-screen sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-4 space-y-4 py-6 ">
         {services.map((service) => (
           <ServiceCard key={service._id} service={service}></ServiceCard>
         ))}
