@@ -1,9 +1,23 @@
-import { useLoaderData } from "react-router-dom";
+// import { useLoaderData } from "react-router-dom";
 import ServiceCard from "./ServiceCard";
+import { useEffect, useState } from "react";
 
 const Service = () => {
-  const services = useLoaderData();
+  // const services = useLoaderData();
+  const [services, setServices] = useState([]);
   console.log(services);
+
+ useEffect( ()=>{
+
+  fetch("http://localhost:5000/services")
+  .then((res) => res.json())
+  .then((data) => {
+    console.log(data);
+    setServices(data);
+  })
+  .catch(error =>console.log(error))
+ },[])
+ 
 
   return (
     <>
@@ -13,10 +27,11 @@ const Service = () => {
         <h1 className="heading_p">
           The majority have suffered alteration in some form, by injected
           humour, or randomised words which don{"'"}t look even slightly
-          believable.{" "}
+          believable.
         </h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 space-y-4 py-6">
+      {/* grid card make by map looping */}
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 space-y-4 py-6 ">
         {services.map((service) => (
           <ServiceCard key={service._id} service={service}></ServiceCard>
         ))}

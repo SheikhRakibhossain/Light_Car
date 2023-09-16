@@ -5,16 +5,15 @@ import { FaArrowRight } from 'react-icons/fa';
 const ServiceCard = ({service}) => {
 
     const {title,img,price} = service;
+    // console.log(props.title)
 
   return (
     <div className="card card-compact w-96 bg-base-100 shadow-xl">
-      <figure>
         <img
           src={img}
           alt="Shoes"
-          className='object-cover h-48 w-96'
+          className='object-cover'
         />
-      </figure>
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
         <p className='text-orange-500 '>Price: ${price}</p>
