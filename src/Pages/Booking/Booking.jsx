@@ -24,10 +24,17 @@ const Booking = () => {
 
         const procced = confirm("Are you sure to delete it");
         if(procced){
-            fetch()
+            fetch(`http://localhost:5000/checkout/${id}`,{
+                method:"DELETE",
+            })
             .then(res=>res.json())
             .then(data =>{
                 console.log(data)
+                if(data.deletedCount > 0){
+                    alert("Your booking has deleted");
+                    const remaining = bookings.filter(booking =>booking._id !== id);
+                    setBookings(remaining)
+                }
             })
             .catch(error =>console.log(error))
         }
