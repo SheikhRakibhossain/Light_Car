@@ -24,7 +24,7 @@ import PrivateRoute from "./PrivateRoute";
         },
         {
           path:'/service',
-          element:<Service/>,
+          element:<PrivateRoute><Service/></PrivateRoute>,
           loader: ()=>fetch('http://localhost:5000/services')
         },
         {
