@@ -1,32 +1,57 @@
 import { Link, NavLink } from "react-router-dom";
 // import logo from '../../../assets/images/logo';
-import  logo  from '../../assets/images/login/logo.svg';
+import logo from "../../assets/images/login/logo.svg";
 import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const Header = () => {
+  const { user, logOut } = useContext(AuthContext);
 
-  const {user,logOut} = useContext(AuthContext);
-
-  const handleLogOut =()=>{
+  const handleLogOut = () => {
     logOut()
-    .then()
-    .catch(error =>console.log(error))
-   }
+      .then()
+      .catch((error) => console.log(error));
+  };
 
-    const options = <>
-    <li><NavLink to='/'>Home</NavLink></li>
-    <li><NavLink to='/about'>About</NavLink></li>
-    <li><NavLink to='/service'>Services</NavLink></li>
-    <li><NavLink to='/contact'>Contact Us</NavLink></li>
-  
-    {user?.email ? <li><Link onClick={handleLogOut} >Log Out</Link></li>:<> <li><NavLink to='/login'>Login</NavLink></li>
-      <li><NavLink to='/register'>Register</NavLink></li> </>
-    
-    }
+  const options = (
+    <>
+      <li>
+        <NavLink to="/">Home</NavLink>
+      </li>
+      <li>
+        <NavLink to="/about">About</NavLink>
+      </li>
+      <li>
+        <NavLink to="/service">Services</NavLink>
+      </li>
+      <li>
+        <NavLink to="/contact">Contact Us</NavLink>
+      </li>
+
+      {user?.email ? (
+        <>
+          {" "}
+          <li>
+            <Link onClick={handleLogOut}>Log Out</Link>
+          </li>
+          <li>
+            <NavLink to='/booking'>Bookings</NavLink>
+          </li>
+        </>
+      ) : (
+        <>
+          {" "}
+          <li>
+            <NavLink to="/login">Login</NavLink>
+          </li>
+          <li>
+            <NavLink to="/register">Register</NavLink>
+          </li>{" "}
+        </>
+      )}
     </>
+  );
 
-   
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -57,9 +82,7 @@ const Header = () => {
         <img src={logo} alt="website logo with a art car in red color" />
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-         {options}
-        </ul>
+        <ul className="menu menu-horizontal px-1">{options}</ul>
       </div>
       <div className="navbar-end">
         <a className="btn">Button</a>
