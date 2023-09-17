@@ -6,9 +6,9 @@ const Booking = () => {
 
     const {user} = useContext(AuthContext);
     const [bookings, setBookings] = useState([]);
-
     const url = `http://localhost:5000/checkout?email=${user.email}`;
 
+//all data get from backend database useing thie use effect
     useEffect(()=>{
         fetch(url)
         .then(res =>res.json())
@@ -18,10 +18,10 @@ const Booking = () => {
         })
         .catch(error=>console.log(error))
 
-    },[])
+    },[url])
 
+    //handle delete btn function
     const handleDelete = id =>{
-
         const procced = confirm("Are you sure to delete it");
         if(procced){
             fetch(`http://localhost:5000/checkout/${id}`,{
@@ -40,6 +40,25 @@ const Booking = () => {
         }
 
     }
+//confirm btn function
+    const handleConfirm = id =>{
+        fetch(`http://localhost:5000/checkout/${id}`,{
+            method:'PATCH',
+            headers:{
+                'content-type':'application/json'
+            },
+            body: JSON.stringify()
+        })
+        .then(res=>res.json())
+        .then(data =>{
+            console.log(data)
+        })
+        .catch(error =>{
+            console.log(error)
+        })
+    }
+
+
     return (
         <>
         <h1>Hello I am useing booking Details : {bookings.length}</h1>
@@ -63,7 +82,7 @@ const Booking = () => {
     <tbody>
       {/* row 1 */}
       {
-        bookings.map(booking=><BookingTable key={booking._id} booking={booking} handleDelete={handleDelete}/>)
+        bookings.map(booking=><BookingTable key={booking._id} booking={booking} handleConfirm={handleConfirm} handleDelete={handleDelete}/>)
       }
      
     </tbody>
