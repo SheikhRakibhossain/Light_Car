@@ -1,22 +1,36 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import BookingTable from "./BookingTable";
+import { useNavigate } from "react-router-dom";
 
 const Booking = () => {
   const { user } = useContext(AuthContext);
   const [bookings, setBookings] = useState([]);
+  const navigate = useNavigate();
   const url = `http://localhost:5000/checkout?email=${user.email}`;
 
   //all data get from backend database useing thie use effect
   useEffect(() => {
-    fetch(url)
+    fetch(url,{
+      method:'GET',
+      headers:{
+        authorization: `Bearer ${localStorage.getItem('service-access-token')}`
+      }
+      
+
+    })
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
-        setBookings(data);
+
+        if(!data.error){
+          setBookings(data);
+        }
+        else{ navigate('/') }
+
       })
       .catch((error) => console.log(error));
-  }, [url]);
+  }, [url, navigate]);
 
   //handle delete btn function
   const handleDelete = (id) => {
