@@ -20,7 +20,20 @@ const Login = () => {
         .then(result =>{
             const loggedUser = result.user;
             console.log(loggedUser) ;
-            navigate(from,{replace:true});
+            fetch('http://localhost:5000/jwt',{
+              method:'POST',
+              headers:{
+                'content-type':'application/json'
+              },
+              body: JSON.stringify(loggedUser)
+            })
+            .then(res => res.json())
+            .then(data =>{
+              console.log(data)
+              localStorage.setItem('service-access-token',data.token)
+              navigate(from,{replace:true});
+            })
+            .catch(error =>console.log(error))
         })
         .catch(error =>console.log(error))
     }
