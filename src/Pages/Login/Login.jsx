@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import loginImg from '../../assets/images/login/login.svg'
 
 const Login = () => {
@@ -41,12 +41,12 @@ const Login = () => {
 
   return (
     <>
-      <div className="hero min-h-screen bg-base-200">
-        <div className="hero-content flex-col lg:flex-row">
-          <div className="text-center lg:text-left">
+      <div className="hero min-h-screen ">
+        <div className="hero-content flex-col lg:flex-row md:space-x-20">
+          <div className="text-center lg:text-left md:w-1/2">
            <img src={loginImg} alt="login image made by grapich" />
           </div>
-          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+          <div className="card flex-shrink-0 w-full md:w-1/2 max-w-sm shadow-2xl bg-base-100">
             <div className="card-body">
                 <form onSubmit={handleLogin}>
               <div className="form-control">
@@ -76,6 +76,9 @@ const Login = () => {
                   <a href="#" className="label-text-alt link link-hover">
                     Forgot password?
                   </a>
+                  <Link to='/register' className="label-text-alt link link-hover">
+                    New here ? Please <span className="text-orange-600">Register </span>
+                  </Link>
                 </label>
               </div>
               <div className="form-control mt-6">
