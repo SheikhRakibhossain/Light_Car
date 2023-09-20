@@ -75,6 +75,14 @@ const About = () => {
         </div>
       </div>
       {/* faq section */}
+      <div className="space-y-4 py-5">
+        <h1 className="text-5xl font-bold text-center">FAQ</h1>
+        <p className=" font-bold text-center">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+          quia, velit repudiandae quas nostrum cum esse sit? Corporis, tenetur
+          expedita!
+        </p>
+      </div>
       <div className="space-y-4">
         <div
           tabIndex={0}
