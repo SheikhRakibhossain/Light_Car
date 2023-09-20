@@ -1,4 +1,7 @@
+
+
 const About = () => {
+  const carURL = "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
   return (
     <>
       <div
@@ -37,6 +40,52 @@ const About = () => {
             </p>
             <button className="btn btn-primary">Get Started</button>
           </div>
+        </div>
+      </div>
+
+      {/* view with some car */}
+      <div className="carousel rounded-box">
+        <div className="carousel-item w-1/3">
+          <img
+            src={carURL}
+            alt="Burger"
+          />
+        </div>
+        <div className="carousel-item w-1/3">
+          <img
+            src={carURL}
+            alt="Burger"
+          />
+        </div>
+        <div className="carousel-item w-1/3">
+          <img
+            src={carURL}
+            alt="Burger"
+          />
+        </div>
+        <div className="carousel-item w-1/3">
+          <img
+            src={carURL}
+            alt="Burger"
+          />
+        </div>
+        <div className="carousel-item w-1/3">
+          <img
+            src={carURL}
+            alt="Burger"
+          />
+        </div>
+        <div className="carousel-item w-1/3">
+          <img
+            src={carURL}
+            alt="Burger"
+          />
+        </div>
+        <div className="carousel-item w-1/3">
+          <img
+            src={carURL}
+            alt="Burger"
+          />
         </div>
       </div>
     </>
