@@ -29,6 +29,21 @@ const AuthProvider = ({children}) => {
         const unsubscribe = onAuthStateChanged(auth, currentUser => {
             setUser(currentUser);
             console.log('current user', currentUser);
+            if(currentUser?.email){
+                fetch('http://localhost:5000/jwt',{
+                    method:"POST",
+                    headers:{
+                        "content-type":"application/json"
+                    },
+                    body:JSON.stringify({email:currentUser?.email})
+                })
+                .then(res=>res.json())
+                .then(data =>console.log(data))
+                .catch(error =>console.log(error))
+                
+            }
+
+
             setLoading(false);
         });
         return () => {
