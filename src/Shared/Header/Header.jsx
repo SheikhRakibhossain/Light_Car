@@ -30,6 +30,9 @@ const Header = () => {
       <li>
         <NavLink to="/contact">Contact Us</NavLink>
       </li>
+      <li>
+        <NavLink to="/test">Test Things</NavLink>
+      </li>
 
       {user?.email ? (
         <>
