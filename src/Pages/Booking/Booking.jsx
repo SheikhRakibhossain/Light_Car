@@ -87,7 +87,7 @@ const Booking = () => {
             <tr>
               <th>
                 <label>
-                  <input type="checkbox" className="checkbox" />
+                  Mark
                 </label>
               </th>
               <th>Service</th>
