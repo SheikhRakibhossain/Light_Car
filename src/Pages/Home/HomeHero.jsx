@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -23,11 +24,10 @@ const HomeHero = () => {
         modules={[Navigation, Pagination, History]}
         className="mySwiper"
       >
-        <SwiperSlide data-history="1">{img1}</SwiperSlide>
-        <SwiperSlide data-history="2">{img2}</SwiperSlide>
-        <SwiperSlide data-history="3">{img3}</SwiperSlide>
-        <SwiperSlide data-history="4">{img4}</SwiperSlide>
-        
+        <SwiperSlide data-history="1"><img src={img1} alt="car slider" /></SwiperSlide>
+        <SwiperSlide data-history="1"><img src={img2} alt="car slider" /></SwiperSlide>
+        <SwiperSlide data-history="1"><img src={img3} alt="car slider" /></SwiperSlide>
+        <SwiperSlide data-history="1"><img src={img4} alt="car slider" /></SwiperSlide>        
       </Swiper>
     </div>
   );
