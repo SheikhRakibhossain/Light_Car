@@ -79,7 +79,7 @@ const Booking = () => {
 
   return (
     <>
-      <h1 className="text-2xl text-center leading-8">Hello there, here is your useing booking Details : {bookings.length}</h1>
+      <h1 className="text-2xl text-center leading-8">Hello {user.email}, here is your booking Details : {bookings.length}</h1>
       <div className="overflow-x-auto">
         <table className="table">
           {/* head */}
