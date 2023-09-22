@@ -38,9 +38,12 @@ const AuthProvider = ({children}) => {
                     body:JSON.stringify({email:currentUser?.email})
                 })
                 .then(res=>res.json())
-                .then(data =>console.log(data))
+                .then(data =>{
+                    localStorage.setItem("jwt-access-token", data?.token);
+                    console.log(data)
+                })
                 .catch(error =>console.log(error))
-                
+
             }
 
 
