@@ -13,6 +13,7 @@ import img4 from "../../assets/images/homeCarousel/4.jpg";
 const HomeHero = () => {
   return (
     <>
+    {/* hello  */}
       <div>
         <Swiper
           spaceBetween={50}
