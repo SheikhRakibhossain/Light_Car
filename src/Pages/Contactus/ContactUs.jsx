@@ -12,11 +12,9 @@ const ContactUs = () => {
   };
   return (
     <>
-      <h2 className="text-4xl py-8 font-bold text-center">
-        I am contact us page for client !!!
-      </h2>
+    <section className="py-20">
 
-      <section className="grid md:grid-cols-2">
+      <div className="grid md:grid-cols-2 ">
         <div>
           <img
             src={ContactUsImage}
@@ -25,10 +23,10 @@ const ContactUs = () => {
         </div>
 
         <div>
-          <h1 className="text-center text-4xl ">
+          <h1 className="text-center text-4xl pt-5 ">
             Need Help? Just Ping Us A Message !!!
           </h1>
-          <form onSubmit={handleContactUs}>
+          <form onSubmit={handleContactUs} className="shadow-2xl p-8">
             <div className="relative z-0 w-full mb-6 group">
               <input
                 type="text"
@@ -85,6 +83,7 @@ const ContactUs = () => {
             <input className="btn btn-secondary btn-sm" type="submit" value="Send Message" />
           </form>
         </div>
+      </div>
       </section>
     </>
   );
