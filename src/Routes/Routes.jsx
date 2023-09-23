@@ -9,6 +9,7 @@ import Checkout from "../Pages/Checkout/Checkout";
 import Booking from "../Pages/Booking/Booking";
 import PrivateRoute from "./PrivateRoute";
 import Test from "../Pages/TestPage/Test";
+import ContactUs from "../Pages/Contactus/ContactUs";
 
   const router = createBrowserRouter([
     {
@@ -40,6 +41,11 @@ import Test from "../Pages/TestPage/Test";
         {
           path:'/test',
           element:<Test/>
+        },
+        // contact us page path
+        {
+          path:'contact-us',
+          element:<ContactUs/>
         }
       ]
     },
