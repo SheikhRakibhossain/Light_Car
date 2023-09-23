@@ -52,16 +52,77 @@ const HomeHero = () => {
               </div>
             </div>
           </SwiperSlide>
+          <SwiperSlide data-history="1">
+            <div className="relative">
+              {/* Image */}
+              <img
+                className="object-cover"
+                src={img2}
+                alt="Background Image"
+              />
 
-          <SwiperSlide data-history="2">
-            <img src={img2} alt="car slider" />
+              {/* Content overlay */}
+              <div className="absolute inset-0 flex items-center justify-center text-white">
+                <div className="w-4/6 text-white space-y-4">
+                  {/* Your content goes here */}
+                  <h1 className="text-4xl font-bold">Car Maker Best Here !</h1>
+                  <p className="text-lg">we are a dumble and extra solution for any car</p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi quaerat pariatur laudantium error dolorem sequi id earum in sapiente corporis!</p>
+                  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-4">
+                    Check In
+                  </button>
+                </div>
+              </div>
+            </div>
           </SwiperSlide>
-          <SwiperSlide data-history="3">
-            <img src={img3} alt="car slider" />
+          <SwiperSlide data-history="1">
+            <div className="relative">
+              {/* Image */}
+              <img
+                className="object-cover"
+                src={img3}
+                alt="Background Image"
+              />
+
+              {/* Content overlay */}
+              <div className="absolute inset-0 flex items-center justify-center text-white">
+                <div className="w-4/6 text-white space-y-4">
+                  {/* Your content goes here */}
+                  <h1 className="text-4xl font-bold">Car Maker Best Here !</h1>
+                  <p className="text-lg">we are a dumble and extra solution for any car</p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi quaerat pariatur laudantium error dolorem sequi id earum in sapiente corporis!</p>
+                  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-4">
+                    Check In
+                  </button>
+                </div>
+              </div>
+            </div>
           </SwiperSlide>
-          <SwiperSlide data-history="4">
-            <img src={img4} alt="car slider" />
+          <SwiperSlide data-history="1">
+            <div className="relative">
+              {/* Image */}
+              <img
+                className="object-cover"
+                src={img4}
+                alt="Background Image"
+              />
+
+              {/* Content overlay */}
+              <div className="absolute inset-0 flex items-center justify-center text-white">
+                <div className="w-4/6 text-white space-y-4">
+                  {/* Your content goes here */}
+                  <h1 className="text-4xl font-bold">Car Maker Best Here !</h1>
+                  <p className="text-lg">we are a dumble and extra solution for any car</p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi quaerat pariatur laudantium error dolorem sequi id earum in sapiente corporis!</p>
+                  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mt-4">
+                    Check In
+                  </button>
+                </div>
+              </div>
+            </div>
           </SwiperSlide>
+
+          
         </Swiper>
       </div>
     </>
