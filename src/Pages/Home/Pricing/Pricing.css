@@ -11,14 +11,15 @@
     position: absolute;
     left: 0; right: 0;
     top: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.57);
+    background: rgba(0, 0, 0, 0.658);
   }
+  /* card css for background only */
   .cardbg{
-    background-color: #2e375f82;
+    background-color: #2e375fb4;
     cursor: pointer;
   }
   .cardbg:hover{
-    background-color: #2e375fc7;
+    background-color: #2e375feb;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     transition: .5s;
 
