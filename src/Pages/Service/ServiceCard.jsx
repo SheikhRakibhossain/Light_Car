@@ -9,7 +9,7 @@ const ServiceCard = ({service}) => {
     // console.log(props.title)
 
   return (
-    <div className="card card-compact w-96 bg-base-100 shadow-xl">
+    <div className="card card-compact w-96 bg-base-100 shadow-xl rounded-none ">
         <img
           src={img}
           alt="Shoes"

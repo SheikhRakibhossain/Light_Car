@@ -1,5 +1,4 @@
-// import Service from "../../Service/Service";
-// import ServiceCard from "../../Service/ServiceCard";
+
 import Service from "../../Service/Service";
 import AboutUs from "../AboutUs";
 import CompletedTask from "../CompletedTask";
@@ -11,8 +10,8 @@ const Home = () => {
     <>
     <HomeHero/>
     <AboutUs/>
-    <CompletedTask/>
     <WhyChooesUs/>
+    <CompletedTask/>
     <Service/>
     </>
   );
