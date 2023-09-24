@@ -1,19 +1,15 @@
 import { useRef } from "react";
 import ContactUsImage from "../../assets/images/login/login.svg";
 import emailjs from "@emailjs/browser";
+import 'react-toastify/dist/ReactToastify.css';
+import Swal from 'sweetalert2';
 
 const ContactUs = () => {
-  const form = useRef();
-  const handleContactUs = (event) => {
-    event.preventDefault();
-    // const form = event.target;
-    // const name = form.userName.value;
-    // const email = form.email.value;
-    // const phone = form.phone.value;
-    // const message = form.message.value;
-    // const helpContact = { name, email, phone, message };
-    // console.log(helpContact);
 
+  const form = useRef();
+
+  const sendEmail = (event) => {
+    event.preventDefault();
     emailjs
       .sendForm(
         "service_ho08igd",
@@ -23,7 +19,17 @@ const ContactUs = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          console.log(result);
+          if(result.status ==200){
+            Swal.fire({
+              position: 'top-center',
+              icon: 'success',
+              title: 'Your message has been recieved. We will let you inform asap',
+              showConfirmButton: false,
+              timer: 1500
+            });
+          
+          }
         },
         (error) => {
           console.log(error.text);
@@ -31,35 +37,8 @@ const ContactUs = () => {
       );
   };
 
-
-//2nd form
-// const form = useRef();
-
-//   const sendEmail = (e) => {
-//     e.preventDefault();
-
-//     emailjs.sendForm('service_ho08igd', 'template_kf674ae', form.current, 'mGEl0Fiu75Oj3RGsL')
-//       .then((result) => {
-//           console.log(result.text);
-//       }, (error) => {
-//           console.log(error.text);
-//       });
-//   };
-
-
   return (
     <>
-
-{/* <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form> */}
-
 
       <section className="py-20">
         <div className="grid md:grid-cols-2 ">
@@ -75,14 +54,13 @@ const ContactUs = () => {
               Need Help? Just Ping Us A Message !!!
             </h1>
             <form
-              ref={form}
-              onSubmit={handleContactUs}
+             ref={form} onSubmit={sendEmail}
               className="shadow-2xl p-8"
             >
               <div className="relative z-0 w-full mb-6 group">
                 <input
                   type="text"
-                  name="userName"
+                  name="user_name"
                   className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" "
                   required
@@ -94,7 +72,7 @@ const ContactUs = () => {
               <div className="relative z-0 w-full mb-6 group">
                 <input
                   type="email"
-                  name="email"
+                  name="user_email"
                   id="email"
                   className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" "
@@ -108,7 +86,7 @@ const ContactUs = () => {
                 <input
                   type="tel"
                   id="phone"
-                  name="phone"
+                  name="user_phone"
                   className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                   placeholder=" "
                   required
@@ -120,7 +98,7 @@ const ContactUs = () => {
               <div className="relative z-0 w-full mb-6 group">
                 <textarea
                   type="text"
-                  name="message"
+                  name="user_message"
                   id="message"
                   rows="4"
                   cols="50"
