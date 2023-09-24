@@ -3,6 +3,7 @@ import Service from "../../Service/Service";
 import AboutUs from "../AboutUs";
 import CompletedTask from "../CompletedTask";
 import HomeHero from "../HomeHero";
+import Pricing from "../Pricing/Pricing";
 import WhyChooesUs from "../WhyChooesUs";
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
     <AboutUs/>
     <WhyChooesUs/>
     <CompletedTask/>
+    <Pricing/>
     <Service/>
     </>
   );

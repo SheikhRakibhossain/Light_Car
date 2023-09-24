@@ -1,0 +1,25 @@
+.overlay {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+
+  }
+  .overlay:before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.57);
+  }
+  .cardbg{
+    background-color: #2e375f82;
+    cursor: pointer;
+  }
+  .cardbg:hover{
+    background-color: #2e375fc7;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: .5s;
+
+  }
