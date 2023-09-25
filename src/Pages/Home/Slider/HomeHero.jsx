@@ -39,7 +39,7 @@ const HomeHero = () => {
               >
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
-                  <div className="max-w-md">
+                  <div className="max-w-[650px] space-y-5">
                     <h1 className="mb-5 text-5xl font-bold">Expert Car Repairs</h1>
                     <p className="mb-5">
                     Trust our skilled technicians to diagnose and fix your vehicle{"'"}s issues with precision and care. We{"'"}re your reliable partner on the road to worry-free driving.
@@ -61,7 +61,7 @@ const HomeHero = () => {
               >
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
-                  <div className="max-w-md">
+                  <div className="max-w-[650px] space-y-5">
                     <h1 className="mb-5 text-5xl font-bold">Quality Parts & Service</h1>
                     <p className="mb-5">
                     We use only top-quality parts and provide exceptional service to ensure your car runs smoothly and safely. Your satisfaction is our priority
@@ -83,7 +83,7 @@ const HomeHero = () => {
               >
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
-                  <div className="max-w-md">
+                  <div className="max-w-[650px] space-y-5">
                     <h1 className="mb-5 text-5xl font-bold">Affordable Pricing</h1>
                     <p className="mb-5">
                     Get the repairs you need without breaking the bank. Our competitive pricing ensures you receive value for every dollar spent on your vehicle
@@ -105,7 +105,7 @@ const HomeHero = () => {
               >
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
-                  <div className="max-w-md">
+                  <div className="max-w-[650px] space-y-5">
                     <h1 className="mb-5 text-5xl font-bold">Customer Satisfaction</h1>
                     <p className="mb-5">
                     Join our satisfied customers who{"'"}ve experienced hassle-free repairs and maintenance. Your car deserves the best, and so do you                    </p>

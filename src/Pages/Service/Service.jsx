@@ -21,7 +21,7 @@ const Service = () => {
 
   return (
     <>
-      <div className="w-1/2 mx-auto pb-4">
+      <div className="md:w-1/2 px-3 pt-4 mx-auto pb-4">
         <h4 className="heading">Service</h4>
         <h1 className="heading_title">Our Service Area</h1>
         <h1 className="heading_p">

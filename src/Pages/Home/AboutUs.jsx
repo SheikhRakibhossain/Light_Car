@@ -7,22 +7,22 @@ const AboutUs = () => {
         {/* daisy ui component */}
         <div className="hero min-h-screen bg-base-200">
           <div className="hero-content flex-col lg:flex-row">
-            <div className="w-1/2 relative">
+            <div className="md:w-1/2 sm:px-2 relative overflow-hidden">
               <img
                 src={person}
-                className="max-w-sm rounded-lg shadow-2xl h-48 md:full object-cover md:h-128"
+                className="md:max-w-sm rounded-lg shadow-2xl h-48 md:full object-cover md:h-128"
               />
               <img
                 src={parts}
-                className="max-w-sm md:w-64 md:h-80 object-cover rounded-lg shadow-2xl border-8 border-white absolute -bottom-12 right-12"
+                className="md:max-w-sm md:w-64 sm:w-40 sm:h-48 md:h-80 object-cover rounded-lg shadow-2xl border-8 border-white absolute -bottom-12 right-12"
               />
             </div>
-            <div className="w-1/2 px-6 space-y-6">
+            <div className="md:w-1/2 sm:px-4 md:px-6 space-y-6">
               <div className=" space-y-4">
                 <h4 className="text-orange-500 leading-loose text-xl">
                   About Us
                 </h4>
-                <h1 className=" text-5xl font-bold capitalize">
+                <h1 className=" sm:text-4xl md:text-5xl  font-bold capitalize">
                   We are qualified & of experience in this field
                 </h1>
                 <p className="">
