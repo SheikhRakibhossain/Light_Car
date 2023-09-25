@@ -1,4 +1,18 @@
+.overlay {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
 
+  }
+  .overlay:before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.658);
+  }
 
 .swiper {
     width: 100%;
@@ -7,19 +21,19 @@
   
   .swiper-slide {
     text-align: center;
-    font-size: 18px;
-    background: #fff;
-  
+    font-size: 18px;  
     /* Center slide text vertically */
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.032);
   }
   
   .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 10%;
+    height: auto;
+    border-radius: 50%;
+
+
   }
   
