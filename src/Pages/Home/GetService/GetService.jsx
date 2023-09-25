@@ -7,9 +7,9 @@ const GetService = () => {
   };
   return (
     <>
-      <section className="grid md:grid-cols-2 bg-white px-10 ">
+      <section className="grid md:grid-cols-2 bg-white mt-10">
         {/* form part */}
-        <div className="py-10">
+        <div className="py-10  px-10 ">
           <div className="py-10 space-y-4">
             <h2 className="text-3xl font-semibold">
               Get A <span className="text-[#f22613]">Service Now !</span>
@@ -23,7 +23,7 @@ const GetService = () => {
           </div>
 
           {/* form start */}
-          <form onSubmit={handleGetServiceNow} className=" py-8 pr-10 ">
+          <form onSubmit={handleGetServiceNow} className=" py-8 ">
             <div className="grid md:grid-cols-2 gap-4">
               <div className="relative z-0 mb-6 group">
                 <input
