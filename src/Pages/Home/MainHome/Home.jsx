@@ -5,7 +5,7 @@ import CompletedTask from "../CompletedTask";
 import GetService from "../GetService/GetService";
 import Location from "../Location/Location";
 import Pricing from "../Pricing/Pricing";
-// import HomeHero from "../Slider/HomeHero";
+import HomeHero from "../Slider/HomeHero";
 import Testimonials from "../Testimonials/Testimonials";
 import WhyChooesUs from "../WhyChooesUs";
 import BackToUp from '@uiw/react-back-to-top';
@@ -14,7 +14,7 @@ import BackToUp from '@uiw/react-back-to-top';
 const Home = () => {
   return (
     <>
-    {/* <HomeHero/> */}
+    <HomeHero/>
     <AboutUs/>
     <WhyChooesUs/>
     <CompletedTask/>
