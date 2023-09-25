@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
 import "./HomeHero.css";
 //slider image
-import img1 from "../../../assets/images/slider/1.jpg";
+// import img1 from "../../../assets/images/slider/1.jpg";
 
 const HomeHero = () => {
   return (
@@ -40,11 +40,9 @@ const HomeHero = () => {
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
                   <div className="max-w-md">
-                    <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+                    <h1 className="mb-5 text-5xl font-bold">Expert Car Repairs</h1>
                     <p className="mb-5">
-                      Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                      assumenda excepturi exercitationem quasi. In deleniti
-                      eaque aut repudiandae et a id nisi.
+                    Trust our skilled technicians to diagnose and fix your vehicle{"'"}s issues with precision and care. We{"'"}re your reliable partner on the road to worry-free driving.
                     </p>
                     <button className="btn btn-primary">Get Started</button>
                   </div>
@@ -64,11 +62,9 @@ const HomeHero = () => {
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
                   <div className="max-w-md">
-                    <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+                    <h1 className="mb-5 text-5xl font-bold">Quality Parts & Service</h1>
                     <p className="mb-5">
-                      Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                      assumenda excepturi exercitationem quasi. In deleniti
-                      eaque aut repudiandae et a id nisi.
+                    We use only top-quality parts and provide exceptional service to ensure your car runs smoothly and safely. Your satisfaction is our priority
                     </p>
                     <button className="btn btn-primary">Get Started</button>
                   </div>
@@ -88,12 +84,31 @@ const HomeHero = () => {
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
                   <div className="max-w-md">
-                    <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
+                    <h1 className="mb-5 text-5xl font-bold">Affordable Pricing</h1>
                     <p className="mb-5">
-                      Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                      assumenda excepturi exercitationem quasi. In deleniti
-                      eaque aut repudiandae et a id nisi.
+                    Get the repairs you need without breaking the bank. Our competitive pricing ensures you receive value for every dollar spent on your vehicle
                     </p>
+                    <button className="btn btn-primary">Get Started</button>
+                  </div>
+                </div>
+              </div>
+            
+          </SwiperSlide>
+          <SwiperSlide>
+            
+              <div
+                className="hero min-h-screen"
+                style={{
+                  backgroundImage:
+                    "url(https://img.freepik.com/free-photo/mechanic-standing-repair-shop-showing-thumbs-up_1170-1375.jpg?size=626&ext=jpg&ga=GA1.1.28436747.1695030037&semt=ais)",
+                }}
+              >
+                <div className="hero-overlay bg-opacity-60"></div>
+                <div className="hero-content text-center text-neutral-content">
+                  <div className="max-w-md">
+                    <h1 className="mb-5 text-5xl font-bold">Customer Satisfaction</h1>
+                    <p className="mb-5">
+                    Join our satisfied customers who{"'"}ve experienced hassle-free repairs and maintenance. Your car deserves the best, and so do you                    </p>
                     <button className="btn btn-primary">Get Started</button>
                   </div>
                 </div>
