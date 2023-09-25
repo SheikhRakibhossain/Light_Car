@@ -7,6 +7,8 @@ import HomeHero from "../HomeHero";
 import Pricing from "../Pricing/Pricing";
 import Testimonials from "../Testimonials/Testimonials";
 import WhyChooesUs from "../WhyChooesUs";
+import BackToUp from '@uiw/react-back-to-top';
+
 
 const Home = () => {
   return (
@@ -19,6 +21,7 @@ const Home = () => {
     <Service/>
     <GetService/>
     <Testimonials/>
+    <BackToUp className="text-white font-bold text-2xl">Top</BackToUp>
     </>
   );
 };

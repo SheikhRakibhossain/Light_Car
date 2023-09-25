@@ -15,6 +15,7 @@ const Testimonials = () => {
         }}
         pagination={{
           clickable: true,
+         
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
@@ -24,7 +25,6 @@ const Testimonials = () => {
             "url(https://img.freepik.com/free-photo/front-view-woman-working-car-service_23-2148826534.jpg?size=626&ext=jpg&ga=GA1.1.28436747.1695030037&semt=ais)", 
         }}
       >
-        <h2>Lorem ipsum dolor sit amet.</h2>
         {/* slider per view */}
         <SwiperSlide className="z-10">
           <div className="container mx-auto px-5">
@@ -50,7 +50,7 @@ const Testimonials = () => {
           <div className="container mx-auto px-5">
             <div className=" sm:px-5 md:px-20 sm:py-10 py-5 flex flex-col flex-grow-1 justify-center items-center space-y-4">
              
-                  <img src="https://img.freepik.com/free-photo/portrait-beautiful-face-young-woman-with-long-brown-hair_186202-4331.jpg?size=626&ext=jpg&ga=GA1.1.28436747.1695030037&semt=sph" />
+                  <img src="https://img.freepik.com/free-photo/close-up-young-successful-man-smiling-camera-standing-casual-outfit-against-blue-background_1258-66609.jpg?size=626&ext=jpg&ga=GA1.1.28436747.1695030037&semt=sph" />
                 
 
               <p className="text-white">
@@ -70,7 +70,7 @@ const Testimonials = () => {
           <div className="container mx-auto px-5">
             <div className=" sm:px-5 md:px-20 sm:py-10 py-5 flex flex-col flex-grow-1 justify-center items-center space-y-4">
              
-                  <img src="https://img.freepik.com/free-photo/portrait-beautiful-face-young-woman-with-long-brown-hair_186202-4331.jpg?size=626&ext=jpg&ga=GA1.1.28436747.1695030037&semt=sph" />
+                  <img src="https://img.freepik.com/free-photo/bohemian-man-with-his-arms-crossed_1368-3542.jpg?size=626&ext=jpg&ga=GA1.1.28436747.1695030037&semt=sph" />
                 
 
               <p className="text-white">
@@ -90,7 +90,7 @@ const Testimonials = () => {
           <div className="container mx-auto px-5">
             <div className=" sm:px-5 md:px-20 sm:py-10 py-5 flex flex-col flex-grow-1 justify-center items-center space-y-4">
              
-                  <img src="https://img.freepik.com/free-photo/portrait-beautiful-face-young-woman-with-long-brown-hair_186202-4331.jpg?size=626&ext=jpg&ga=GA1.1.28436747.1695030037&semt=sph" />
+                  <img src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&ga=GA1.1.28436747.1695030037&semt=sph" />
                 
 
               <p className="text-white">
