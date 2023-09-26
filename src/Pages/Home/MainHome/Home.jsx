@@ -1,6 +1,7 @@
 
 import Service from "../../Service/Service";
 import AboutUs from "../AboutUs";
+import Brands from "../Brands/Brands";
 import CompletedTask from "../CompletedTask";
 import GetService from "../GetService/GetService";
 import Location from "../Location/Location";
@@ -23,6 +24,7 @@ const Home = () => {
     <GetService/>
     <Testimonials/>
     <Location/>
+    <Brands/>
     <BackToUp className="text-white font-bold text-2xl">Top</BackToUp>
     </>
   );
