@@ -1,26 +1,26 @@
-const CTCard = ({pro}) => {
-    const {title, image, price, serviceName, details, date, repairBy} = pro;
+const CTCard = ({ pro }) => {
+  const { title, image, price, details, date, repairBy } = pro;
   return (
     <>
-      <div className="card bg-base-100 shadow-xl ">
+      <div className="card shadow-xl ">
         <figure>
-          <img
-            src={image}
-            alt="Shoes"
-          />
+          <img src={image} alt="service" />
         </figure>
         <div className="card-body">
           <h2 className="card-title">
             {title}
-            <div className="badge badge-secondary">{title}</div>
+            
           </h2>
-          <p>{serviceName}</p>
-          <p>{price}</p>
-          <p>{details}</p>
-          <p>{repairBy}</p>
-          <div className="card-actions justify-end">
-            <div className="badge badge-outline">{date}</div>
-            <div className="badge badge-outline">Products</div>
+          <div className="flex flex-col items-start space-y-2">
+            {/* <p>{serviceName}</p> */}
+            <p className="text-[#ff0000] text-xl">Price: ${price}</p>
+            <p>Details: {details}</p>
+            <p className="font-bold">Repair By: {repairBy}</p>
+          </div>
+
+          <div className="flex justify-between">
+            <button className="bg-slate-300 py-2 px-4">{date}th</button>
+            <button className="bg-slate-300 py-2 px-4">Case Studies </button>
           </div>
         </div>
       </div>

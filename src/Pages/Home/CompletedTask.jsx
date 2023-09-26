@@ -40,11 +40,11 @@ const CompletedTask = () => {
           onSelect={(index) => setTabIndex(index)}
           className="border-0"
         >
-          <TabList>
-            <Tab>Color</Tab>
-            <Tab>Full Car Repair</Tab>
-            <Tab>engine Repair</Tab>
-            <Tab>Electrical Line Generate</Tab>
+          <TabList className=" bg-slate-200 py-4 space-x-3">
+            <Tab className="btn btn-outline btn-info text-black ">Color</Tab>
+            <Tab className="btn btn-outline btn-primary text-black">Full Car Repair</Tab>
+            <Tab className="btn btn-outline btn-warning text-black">engine Repair</Tab>
+            <Tab className="btn btn-outline btn-secondary text-black">Electrical Line Generate</Tab>
           </TabList>
 
           <TabPanel>
