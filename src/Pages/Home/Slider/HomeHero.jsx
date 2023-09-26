@@ -37,7 +37,7 @@ const HomeHero = () => {
                     "url(https://img.freepik.com/free-photo/young-woman-female-mechanic-checking-chassis-workshop_7502-4431.jpg?size=626&ext=jpg&ga=GA1.1.28436747.1695030037&semt=ais)",
                 }}
               >
-                <div className="hero-overlay bg-opacity-60"></div>
+                <div className="hero-overlay bg-black bg-opacity-50"></div>
                 <div className="hero-content text-center text-neutral-content">
                   <div className="max-w-[650px] space-y-5">
                     <h1 className="mb-5 text-5xl font-bold text-white z-10 uppercase">Expert Car Repairs</h1>
@@ -59,7 +59,7 @@ const HomeHero = () => {
                     "url(https://img.freepik.com/free-photo/mechanic-servicing-car-engine_1170-1173.jpg?size=626&ext=jpg&ga=GA1.1.28436747.1695030037&semt=ais)",
                 }}
               >
-                <div className="hero-overlay bg-opacity-75"></div>
+                <div className="hero-overlay bg-black bg-opacity-50"></div>
                 <div className="hero-content text-center text-white ">
                   <div className="max-w-[650px] space-y-5">
                     <h1 className="mb-5 text-5xl font-bold text-white z-10 uppercase">Quality Parts & Service</h1>
@@ -81,7 +81,7 @@ const HomeHero = () => {
                     "url(https://img.freepik.com/free-photo/benchman-fixing-engine-car_114579-2807.jpg?size=626&ext=jpg&ga=GA1.2.28436747.1695030037&semt=ais)",
                 }}
               >
-                <div className="hero-overlay bg-opacity-60"></div>
+                <div className="hero-overlay bg-black bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
                   <div className="max-w-[650px] space-y-5">
                     <h1 className="mb-5 text-5xl font-bold text-white z-10 uppercase">Affordable Pricing</h1>
@@ -103,7 +103,7 @@ const HomeHero = () => {
                     "url(https://img.freepik.com/free-photo/mechanic-standing-repair-shop-showing-thumbs-up_1170-1375.jpg?size=626&ext=jpg&ga=GA1.1.28436747.1695030037&semt=ais)",
                 }}
               >
-                <div className="hero-overlay bg-opacity-60"></div>
+                <div className="hero-overlay bg-black bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
                   <div className="max-w-[650px] space-y-5">
                     <h1 className="mb-5 text-5xl font-bold text-white z-10 uppercase">Customer Satisfaction</h1>
