@@ -14,7 +14,7 @@ const Brands = () => {
       <Marquee speed={150}>
        
       {
-        images.map(image=><img key={image} src={image} alt="car logo" className="w-[150px] p-4 " />  )
+        images.map(image=><img key={image} src={image} alt="car logo" className="w-[100px] p-4 " />  )
       }
       </Marquee>
     </div>

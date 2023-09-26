@@ -1,13 +1,10 @@
 import {
 
     FaBoxOpen,
-  FaCartArrowDown,
   FaFacebook,
   FaInstagram,
   FaLinkedin,
-  FaLocationArrow,
   FaPhone,
-  FaSearch,
   FaTwitter,
   FaYoutube,
 } from "react-icons/fa";
@@ -15,31 +12,25 @@ import {
 const TopHeader = () => {
   return (
     <>
-      <div className="navbar bg-[#f22613] text-white">
-        <div className="flex-1 gap-4">
-          <div className="flex justify-center gap-2 items-center">
+      <div className="sm:grid sm:grid-cols-2 py-2 px-3 bg-[#f22613]  text-white">
+        <div className="flex justify-start items-center gap-4 ">
+          <div className=" flex items-center gap-2">
             {" "}
             <span>
               <FaPhone />
             </span>{" "}
-            +8801637503636{" "}
+            (+88) 01637503636{" "}
           </div>
-          <div className="flex  justify-center gap-2 items-center">
+          <div className="flex items-center gap-2">
             {" "}
             <span>
               <FaBoxOpen/>
             </span>
             rakib@gmail.com
           </div>
-          <div className="flex  justify-center gap-2 items-center">
-            <span>
-              <FaLocationArrow />
-            </span>
-            Dhaka, 12/2 street:7
-          </div>
         </div>
-        <div className="flex-none">
-          <ul className="menu menu-horizontal px-1">
+        <div className="flex-none py-3 ">
+          <ul className=" flex sm:content-center sm:justify-center  md:justify-end  items-center space-x-3">
             <li>
               <a>
                 <FaFacebook />
@@ -65,21 +56,11 @@ const TopHeader = () => {
                 <FaTwitter />
               </a>
             </li>
-            <div className="flex ">
-              <li>
-                <a>
-                  <FaCartArrowDown />
-                </a>
-              </li>
-              <li>
-                <a>
-                  <FaSearch />
-                </a>
-              </li>
-            </div>
           </ul>
         </div>
       </div>
+
+    
     </>
   );
 };

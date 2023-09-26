@@ -40,7 +40,7 @@ const CompletedTask = () => {
           onSelect={(index) => setTabIndex(index)}
           className="border-0"
         >
-          <TabList className=" bg-slate-200 py-4 space-x-3">
+          <TabList className=" bg-slate-200 py-4 space-x-3 space-y-3">
             <Tab className="btn btn-outline btn-info text-black ">Color</Tab>
             <Tab className="btn btn-outline btn-primary text-black">Full Car Repair</Tab>
             <Tab className="btn btn-outline btn-warning text-black">engine Repair</Tab>
@@ -59,9 +59,7 @@ const CompletedTask = () => {
           <TabPanel>
             <CompletedTaskCard project={electric} />
           </TabPanel>
-          <TabPanel>
-            <h1>heloo</h1>
-          </TabPanel>
+          
         </Tabs>
       </div>
 

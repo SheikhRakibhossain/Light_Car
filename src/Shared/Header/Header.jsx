@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 // import logo from '../../../assets/images/logo';
-import logo from "../../assets/images/login/logo.svg";
+import logo from "../../assets/icons/car-logo.svg";
 import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 
@@ -85,7 +85,7 @@ const Header = () => {
             {options}
           </ul>
         </div>
-        <img src={logo} alt="website logo with a art car in red color" />
+        <img className="w-20" src={logo} alt="website logo with a art car in red color" />
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{options}</ul>
