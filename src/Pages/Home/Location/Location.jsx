@@ -28,13 +28,13 @@ const Location = () => {
             </div>
             
         </div>
-        <div className='w-full'>
+        <div className="w-full">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.354951827911!2d90.25721207487702!3d23.91248188253557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755e9dec326c4cd%3A0xe3e8a8e36a0fee50!2sNabinagar%20Bus%20Stand!5e0!3m2!1sen!2sbd!4v1695644675388!5m2!1sen!2sbd"
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-            className=' w-full md:w-[700px] h-[380px] '
+            className=' w-full h-64 '
           ></iframe>
         </div>
       </section>
