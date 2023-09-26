@@ -15,7 +15,7 @@ const Pricing = () => {
                         <p>3.Tire Rotation  </p>
                         <p>4.Battery Checkr  </p>
                         <p>5.Fluid Top-Up  </p>
-                        <button className='btn btn-accent btn-sm mt-4' type="button">Book Now</button>
+                        <button className='btn btn-primary btn-sm mt-4' type="button">Book Now</button>
                     </div>
             </div>
             <div className='w-[100%] grid md:grid-cols-2 border p-6 z-10 cardbg gap-4'>
@@ -29,7 +29,7 @@ const Pricing = () => {
                         <p>3.Wheel Alignment  </p>
                         <p>4.AC System Check </p>
                         <p>5.Engine Diagnostic </p>
-                        <button className='btn btn-accent btn-sm mt-4' type="button">Book Now</button>
+                        <button className='btn btn-primary btn-sm mt-4' type="button">Book Now</button>
                     </div>
             </div>
             <div className='w-[100%] grid md:grid-cols-2 border p-6 z-10 cardbg gap-4'>
@@ -43,7 +43,7 @@ const Pricing = () => {
                         <p>3.Engine Overhaul</p>
                         <p>4.Exhaust System Repair </p>
                         <p>5.Electrical Repairs  </p>
-                        <button className='btn btn-accent btn-sm mt-4' type="button">Book Now</button>
+                        <button className='btn btn-primary btn-sm mt-4' type="button">Book Now</button>
                     </div>
             </div>
             <div className='w-[100%] grid md:grid-cols-2 border p-6 z-10 cardbg gap-4'>
@@ -57,7 +57,7 @@ const Pricing = () => {
                         <p>3.Emergency Roadside Assistance </p>
                         <p>4.Performance Upgrades</p>
                         <p>5.Fleet Maintenance</p>
-                        <button className='btn btn-accent btn-sm mt-4' type="button">Book Now</button>
+                        <button className='btn btn-primary btn-sm mt-4' type="button">Book Now</button>
                     </div>
             </div>
            

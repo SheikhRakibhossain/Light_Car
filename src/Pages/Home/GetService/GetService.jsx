@@ -83,7 +83,7 @@ const GetService = () => {
               <label className="from_label">Write your message</label>
             </div>
             <input
-              className="btn btn-secondary btn-sm"
+              className="btn btn-primary btn-sm"
               type="submit"
               value="Send Message"
             />

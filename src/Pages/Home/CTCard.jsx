@@ -19,8 +19,8 @@ const CTCard = ({ pro }) => {
           </div>
 
           <div className="flex justify-between">
-            <button className="bg-slate-300 py-2 px-4">{date}th</button>
-            <button className="bg-slate-300 py-2 px-4">Case Studies </button>
+            <button className="btn btn-outline btn-primary btn-sm rounded-none">{date}th</button>
+            <button className="btn btn-outline btn-primary btn-sm rounded-none">Case Studies </button>
           </div>
         </div>
       </div>
