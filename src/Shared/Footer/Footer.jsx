@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
       <footer
-        className="footer text-white px-6 py-10  bg-black bg-cover bg-center bg-no-repeat"
+        className="footer text-white px-6 py-20  bg-black bg-cover bg-center bg-no-repeat"
 
       >
         <aside>

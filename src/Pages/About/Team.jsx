@@ -8,6 +8,10 @@ const Team = () => {
 
   return (
     <>
+      <div className="py-10 text-center ">
+        <h2 className="text-3xl font-semibold text-center">Our<span className="text-[#f22613]"> Team Members</span></h2>
+        <span className="w-20 h-2 border bg-red-400 border-red-400 text-center"></span>
+    </div>
       <div className=" mx-auto p-4 grid md:grid-cols-4 gap-4">
         {/* team member 1st */}
         <div>

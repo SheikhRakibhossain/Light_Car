@@ -8,7 +8,7 @@ const WhyChooesUs = () => {
           <img
             src="https://img.freepik.com/free-photo/worried-customer-talking-with-car-mechanic-auto-repair-shop_637285-7694.jpg?w=996&t=st=1695537757~exp=1695538357~hmac=af4ddb9960bcacf6704f1ae8aa1690a5e39cf1cdd3cdc55a862e13e2cd5e273e"
             alt="car maker image"
-            className="fulid object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
         <div className="bg-slate-600 md:p-20">

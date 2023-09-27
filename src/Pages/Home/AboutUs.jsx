@@ -3,7 +3,7 @@ import person from "../../assets/images/about_us/person.jpg";
 const AboutUs = () => {
   return (
     <>
-      {/* daisy ui component */}
+      {/* about us component*/}
       <div className="hero min-h-screen bg-base-200">
         <div className="grid md:grid-cols-2 px-4">
           <div className=" sm:px-4 md:px-6 space-y-6">
