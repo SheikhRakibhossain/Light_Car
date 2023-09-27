@@ -1,7 +1,10 @@
 const Benifits = () => {
   return (
     <>
-      <section></section>
+      <section>
+
+        
+      </section>
     </>
   );
 };
