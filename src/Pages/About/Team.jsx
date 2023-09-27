@@ -18,6 +18,7 @@ const Team = () => {
             <img
               src="https://img.freepik.com/free-photo/young-mechanic-working-his-workshop_23-2148970733.jpg?size=626&ext=jpg&ga=GA1.1.28436747.1695030037&semt=ais"
               alt="car maker"
+              className="w-full h-full object-cover"
             />
           </div>
           {/* Social media icons container */}
@@ -49,8 +50,8 @@ const Team = () => {
           </div>
         </div>
         <div className=" border flex flex-col justify-center items-center space-y-3 pb-2">
-          <h2 className="text-xl font-semibold mb-2">Robert Hearter</h2>
-          <span className=" bg-slate-600 text-white py-1 px-5 rounded-full">Color Designer</span>
+          <h2 className="text-xl font-semibold mb-2">Robert Collins</h2>
+          <span className=" bg-slate-600 text-white py-1 px-5 rounded-full">Manager Of SRM</span>
        {/* rating */}
        <Rating
       style={{ maxWidth: 200, text:"center",}}
@@ -70,8 +71,9 @@ const Team = () => {
           {/* Card container */}
           <div className="bg-white border rounded-lg shadow-lg cursor-pointer">
             <img
-              src="https://img.freepik.com/free-photo/young-mechanic-working-his-workshop_23-2148970733.jpg?size=626&ext=jpg&ga=GA1.1.28436747.1695030037&semt=ais"
+              src="https://img.freepik.com/free-photo/front-view-female-welder-posing-work_23-2148813369.jpg?size=626&ext=jpg&ga=GA1.1.28436747.1695030037&semt=ais"
               alt="car maker"
+              className="w-full h-full object-cover"
             />
           </div>
           {/* Social media icons container */}
@@ -103,7 +105,7 @@ const Team = () => {
           </div>
         </div>
         <div className=" border flex flex-col justify-center items-center space-y-3 pb-2">
-          <h2 className="text-xl font-semibold mb-2">Robert Hearter</h2>
+          <h2 className="text-xl font-semibold mb-2">Sophia Enna</h2>
           <span className=" bg-slate-600 text-white py-1 px-5 rounded-full">Color Designer</span>
        {/* rating */}
        <Rating
@@ -124,8 +126,10 @@ const Team = () => {
           {/* Card container */}
           <div className="bg-white border rounded-lg shadow-lg cursor-pointer">
             <img
-              src="https://img.freepik.com/free-photo/young-mechanic-working-his-workshop_23-2148970733.jpg?size=626&ext=jpg&ga=GA1.1.28436747.1695030037&semt=ais"
+              src="https://img.freepik.com/free-photo/technician-writing-clipboard-workshop_23-2147897931.jpg?size=626&ext=jpg&ga=GA1.1.28436747.1695030037&semt=ais"
               alt="car maker"
+              className="w-full h-full object-cover"
+
             />
           </div>
           {/* Social media icons container */}
@@ -157,8 +161,8 @@ const Team = () => {
           </div>
         </div>
         <div className=" border flex flex-col justify-center items-center space-y-3 pb-2">
-          <h2 className="text-xl font-semibold mb-2">Robert Hearter</h2>
-          <span className=" bg-slate-600 text-white py-1 px-5 rounded-full">Color Designer</span>
+          <h2 className="text-xl font-semibold mb-2">Phillps Mopps</h2>
+          <span className=" bg-slate-600 text-white py-1 px-5 rounded-full">Electrical Engineer</span>
        {/* rating */}
        <Rating
       style={{ maxWidth: 200, text:"center",}}
@@ -178,8 +182,10 @@ const Team = () => {
           {/* Card container */}
           <div className="bg-white border rounded-lg shadow-lg cursor-pointer">
             <img
-              src="https://img.freepik.com/free-photo/young-mechanic-working-his-workshop_23-2148970733.jpg?size=626&ext=jpg&ga=GA1.1.28436747.1695030037&semt=ais"
+              src="https://img.freepik.com/free-photo/man-checking-out-new-car_23-2148130138.jpg?size=626&ext=jpg&ga=GA1.1.28436747.1695030037&semt=ais"
               alt="car maker"
+              className="w-full h-full object-cover"
+
             />
           </div>
           {/* Social media icons container */}
@@ -211,8 +217,8 @@ const Team = () => {
           </div>
         </div>
         <div className=" border flex flex-col justify-center items-center space-y-3 pb-2">
-          <h2 className="text-xl font-semibold mb-2">Robert Hearter</h2>
-          <span className=" bg-slate-600 text-white py-1 px-5 rounded-full">Color Designer</span>
+          <h2 className="text-xl font-semibold mb-2">Jhon Smiths</h2>
+          <span className=" bg-slate-600 text-white py-1 px-5 rounded-full">Body Expert</span>
        {/* rating */}
        <Rating
       style={{ maxWidth: 200, text:"center",}}
