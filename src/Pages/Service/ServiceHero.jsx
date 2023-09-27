@@ -1,52 +1,48 @@
 const ServiceHero = () => {
   return (
-    <section>
-      <div className="bg-gray-200 py-20 overflow-hidden">
-        <div className="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-24">
-          <div className="flex flex-col w-full lg:w-1/3 justify-center items-start p-8">
-            <h1 className="text-xl md:text-xl p-2 text-black tracking-loose">
-            Our Comprehensive Services
-            </h1>
-            <h2 className="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-2">
-           
-            Trust Your Vehicle to the Experts
-            </h2>
-            <p className="text-sm md:text-base mb-4">
-              Explore your favourite events and register now to showcase your
-              talent and win exciting prizes.
-            </p>
-            <a
-              href="#"
-              className="btn btn-primary"
-            >
-              Schedule Service
-            </a>
-          </div>
-          <div className="p-8 mt-12 mb-6 md:mb-0 md:mt-0 ml-0 md:ml-12 lg:w-2/3  justify-center">
-            <div className="h-48 flex flex-wrap content-center">
-              <div>
-                <img
-                  className="inline-block mt-28 hidden xl:block"
-                  src="https://user-images.githubusercontent.com/54521023/116969935-c13d5b00-acd4-11eb-82b1-5ad2ff10fb76.png"
-                />
-              </div>
-              <div>
-                <img
-                  className="inline-block mt-24 md:mt-0 p-8 md:p-0"
-                  src="https://user-images.githubusercontent.com/54521023/116969931-bedb0100-acd4-11eb-99a9-ff5e0ee9f31f.png"
-                />
-              </div>
-              <div>
-                <img
-                  className="inline-block mt-28 hidden lg:block"
-                  src="https://user-images.githubusercontent.com/54521023/116969939-c1d5f180-acd4-11eb-8ad4-9ab9143bdb50.png"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+    
+<section
+  className="relative bg-[url(https://img.freepik.com/free-photo/couple-searching-new-car-dealership_23-2149117179.jpg?size=626&ext=jpg&ga=GA1.2.28436747.1695030037&semt=ais)] bg-cover bg-center bg-no-repeat"
+>
+  <div
+    className="absolute inset-0 md:bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 ltr:sm:bg-gradient-to-r rtl:sm:bg-gradient-to-l "
+  ></div>
+
+  <div
+    className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8"
+  >
+    <div className="max-w-xl ltr:sm:text-left rtl:sm:text-right">
+      <h1 className="text-3xl font-extrabold sm:text-5xl">
+        Let us find your
+
+        <strong className="block font-extrabold text-rose-700">
+          Forever Home.
+        </strong>
+      </h1>
+
+      <p className="mt-4 max-w-lg sm:text-xl/relaxed">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illo
+        tenetur fuga ducimus numquam ea!
+      </p>
+
+      <div className="mt-8 flex flex-wrap gap-4 text-center">
+        <a
+          href="#"
+          className="block w-full rounded bg-rose-600 px-12 py-3 text-sm font-medium text-white shadow hover:bg-rose-700 focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+        >
+          Get Started
+        </a>
+
+        <a
+          href="#"
+          className="block w-full rounded bg-white px-12 py-3 text-sm font-medium text-rose-600 shadow hover:text-rose-700 focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+        >
+          Learn More
+        </a>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
   );
 };
 

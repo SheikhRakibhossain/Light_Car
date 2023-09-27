@@ -1,8 +1,6 @@
 // import { useLoaderData } from "react-router-dom";
 import ServiceCard from "./ServiceCard";
 import { useEffect, useState } from "react";
-import ServiceHero from "./ServiceHero";
-import Benifits from "./Benifits";
 
 const Service = () => {
   // const services = useLoaderData();
@@ -21,8 +19,7 @@ const Service = () => {
 
   return (
     <>
-    <Benifits/>
-      <ServiceHero />
+    
       <div className="md:w-1/2 px-3 pt-4 mx-auto pb-4">
         <h4 className="heading">Service</h4>
         <h1 className="heading_title">Our Service Area</h1>
