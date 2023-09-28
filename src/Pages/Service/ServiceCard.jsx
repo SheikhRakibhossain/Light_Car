@@ -17,10 +17,10 @@ const ServiceCard = ({service}) => {
         />
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
-        <p className='text-orange-500 '>Price: ${price}</p>
+        <p className='text-[#f22613] '>Price: ${price}</p>
         <div className="card-actions justify-between">
           <button className="btn btn-primary btn-sm">View More Info</button>
-          <Link to={`checkout/${_id}`} className='bg-orange-400 hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-full flex items-center space-x-2 '> <span >Buy Now </span> <FaArrowRight/> </Link>
+          <Link to={`checkout/${_id}`} className='bg-[#f22613] hover:bg-orange-600 text-white font-bold py-2 px-4 rounded-full flex items-center space-x-2 '> <span >Buy Now </span> <FaArrowRight/> </Link>
           
         </div>
       </div>

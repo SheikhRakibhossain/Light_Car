@@ -7,7 +7,7 @@ const Testimonials = () => {
   return (
     <>
       <div
-        className="hero min-h-screen"
+        className="hero min-h-screen items-center justify-center content-center"
         style={{
           backgroundImage:
             "url(https://img.freepik.com/free-photo/front-view-woman-working-car-service_23-2148826534.jpg?size=626&ext=jpg&ga=GA1.1.28436747.1695030037&semt=ais)",
