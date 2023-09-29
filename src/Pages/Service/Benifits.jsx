@@ -2,8 +2,7 @@ const Benifits = () => {
   return (
     <>
       <section>
-
-        cs
+        <button className="btn btn-secondary before:bg-black hover:divide-orange-500">Like me</button>
       </section>
     </>
   );
