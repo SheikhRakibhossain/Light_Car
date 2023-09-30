@@ -1,10 +1,18 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import registerImg from '../../assets/images/login/login.svg';
 import {Link} from 'react-router-dom'
+import ReCAPTCHA from "react-google-recaptcha";
 
 
 const Register = () => {
+  const [ verify, setVerified] = useState(false);
+
+  function onChange(value) {
+    console.log("Captcha value:", value);
+    setVerified(true)
+  }
+  //captha verify function ended
 
     const {createUser} = useContext(AuthContext)
   const handleRegister = (e) => {
@@ -87,15 +95,18 @@ const Register = () => {
                       Forgot password?
                     </a>
                     <Link to='/login' className="label-text-alt link link-hover">
-                    Already have an account? please <span className="text-orange-600">Log In</span>
+                    Already have an account? please <span className="text-orange-600">Login</span>
                     </Link>
                   </label>
                 </div>
+                <ReCAPTCHA sitekey="6LeKsGUoAAAAABgdjCVQSUnERYCBwee9YBJGDeqr" onChange={onChange} />
                 <div className="form-control mt-6">
                   <input
                     type="submit"
                     value="Login"
                     className="btn btn-primary"
+                    disabled={!verify}
+
                   />
                 </div>
               </form>
