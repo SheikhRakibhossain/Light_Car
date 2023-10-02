@@ -11,7 +11,7 @@ const Testimonials = () => {
         style={{
           backgroundImage:
             "url(https://img.freepik.com/free-photo/front-view-woman-working-car-service_23-2148826534.jpg?size=626&ext=jpg&ga=GA1.1.28436747.1695030037&semt=ais)",
-        }}
+        backgroundPosition:"top"}}
       >
         
         <div className="hero-overlay bg-black bg-opacity-60">

@@ -6,10 +6,15 @@ import TopHeader from "../../Shared/Header/TopHeader";
 const Main = () => {
   return (
     <>
+      <div>
       <TopHeader />
        <Header />
-      <Outlet />
+       <div className="w-full min-h-[calc(100% - 464px)]" >
+       <Outlet/>
+
+       </div>
       <Footer />
+      </div>
     </>
   );
 };

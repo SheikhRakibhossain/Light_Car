@@ -5,6 +5,8 @@ import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
 import {ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Service from './../../Pages/Service/Service';
+import BookServices from "../../Pages/BookServices/BookServices";
 
 const Header = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -105,7 +107,7 @@ const Header = () => {
         <ul className="menu menu-horizontal px-1">{options}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+       <BookServices/>
       </div>
     </div>
 

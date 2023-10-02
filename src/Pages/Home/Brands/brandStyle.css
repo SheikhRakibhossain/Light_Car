@@ -1,0 +1,5 @@
+.rfm-child {
+    transform: var(--transform);
+    border: 1px solid black;
+    margin: 4px;
+}
