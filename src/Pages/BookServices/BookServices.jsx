@@ -1,4 +1,7 @@
+
 const BookServices = () => {
+
+
   return (
     <>
       <section>
@@ -17,13 +20,17 @@ const BookServices = () => {
                 ✕
               </button>
               {/* form control started form here */}
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum reprehenderit sed eum blanditiis iste perferendis nemo illum pariatur explicabo necessitatibus debitis, itaque velit sapiente laudantium delectus sint odio nostrum facilis?</p>
+              <h2 className="text-3xl font-semi-bold text-center pb-4 pt-4">
+            <span className="text-black">Need You a</span> <span className="text-[#f22613]">Car Re-pair Service?</span>
+          </h2>
+              <p>
+               Here is a form that you can fill out it with your personal info that repair your car from scratch with the bloombard. We would love to here that it is a best car repair and re-condition center you ever been seen before. So why are you late? We are excited to provide our best service with you.
+              </p>
             </form>
             <form>
-
-
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="form-control">
+              <div className="grid md:grid-cols-2 gap-4">
+               
+                <div className="form-control">
                   <label className="label">
                     <span className="label-text">Name</span>
                   </label>
@@ -35,106 +42,97 @@ const BookServices = () => {
                     required
                   />
                 </div>
-              <div className="form-control">
+                <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Name</span>
+                    <span className="label-text">Phone number</span>
                   </label>
                   <input
                     type="text"
-                    name="Uname"
-                    placeholder="name"
+                    name="phone"
+                    placeholder="Phone Number"
                     className="input input-bordered"
                     required
                   />
                 </div>
-              <div className="form-control">
+                <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Name</span>
+                    <span className="label-text">Email</span>
                   </label>
                   <input
-                    type="text"
-                    name="Uname"
-                    placeholder="name"
+                    type="email"
+                    name="email"
+                    placeholder="email"
                     className="input input-bordered"
                     required
                   />
                 </div>
-              <div className="form-control">
+                <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Name</span>
+                    <span className="label-text">Service Type</span>
                   </label>
                   <input
                     type="text"
-                    name="Uname"
-                    placeholder="name"
+                    name="serviceType"
+                    placeholder="Service type"
                     className="input input-bordered"
                     required
                   />
                 </div>
-              <div className="form-control">
+                <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Name</span>
+                    <span className="label-text">Asking Price</span>
                   </label>
                   <input
-                    type="text"
-                    name="Uname"
-                    placeholder="name"
+                    type="number"
+                    name="askPrice"
+                    placeholder="Ask Price"
                     className="input input-bordered"
                     required
                   />
                 </div>
-              <div className="form-control">
+                <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Name</span>
+                    <span className="label-text">Service Date</span>
                   </label>
                   <input
-                    type="text"
-                    name="Uname"
-                    placeholder="name"
+                    type="date"
+                    name="date"
                     className="input input-bordered"
                     required
                   />
                 </div>
-              <div className="form-control">
+                <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Name</span>
+                    <span className="label-text">Most of The Issues</span>
                   </label>
                   <input
                     type="text"
-                    name="Uname"
-                    placeholder="name"
+                    name="issues"
+                    placeholder="Issues name"
                     className="input input-bordered"
                     required
                   />
                 </div>
-              <div className="form-control">
+                <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Name</span>
+                    <span className="label-text">Hand Over Rider Name</span>
                   </label>
                   <input
                     type="text"
-                    name="Uname"
-                    placeholder="name"
-                    className="input input-bordered"
-                    required
-                  />
-                </div>
-              <div className="form-control">
-                  <label className="label">
-                    <span className="label-text">Name</span>
-                  </label>
-                  <input
-                    type="text"
-                    name="Uname"
-                    placeholder="name"
+                    name="handOver"
+                    placeholder="Handing Over Rider"
                     className="input input-bordered"
                     required
                   />
                 </div>
               </div>
+              <input type="submit" value="Submit The Request" className="btn bg-[#f22613] mt-4 text-white hover:bg-[#f22613b0] hover:text-black" />
             </form>
-          </div>
+      
+    </div>
         </dialog>
+        {/* fake modal */}
+        
       </section>
     </>
   );
