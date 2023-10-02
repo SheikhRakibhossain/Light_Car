@@ -46,8 +46,13 @@ const Register = () => {
       })
       .catch((error) => console.log(error));
   };
+//google sign in
+  const googleSignIn = () => {
+    signinGoogle()
+    .then(res => console.log(res))
+    .catch(error =>console.log(error))
+  };
 
-  const googleSignIn = () => {};
   return (
     <>
       <div className="hero min-h-screen">
@@ -107,9 +112,6 @@ const Register = () => {
                     required
                   />
                   <label className="label">
-                    <a href="#" className="label-text-alt link link-hover">
-                      Forgot password?
-                    </a>
                     <Link
                       to="/login"
                       className="label-text-alt link link-hover"
@@ -136,7 +138,7 @@ const Register = () => {
               </form>
               {/* google sign in btn */}
               <div className="flex justify-center ">
-                <button className="px-4 py-2 border flex gap-2 border-slate-200 rounded-lg text-slate-700 hover:border-slate-400 hover:text-slate-900 hover:shadow transition duration-150">
+                <button onClick={googleSignIn} className="px-4 py-2 border flex gap-2 border-slate-200 rounded-lg text-slate-700 hover:border-slate-400 hover:text-slate-900 hover:shadow transition duration-150">
                   <img
                     className="w-6 h-6"
                     src="https://www.svgrepo.com/show/475656/google-color.svg"
