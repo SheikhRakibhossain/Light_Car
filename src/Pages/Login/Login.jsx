@@ -15,7 +15,7 @@ const Login = () => {
   }
   //captha verify function ended
 
-  const { signIn } = useContext(AuthContext);
+  const { signIn,signinGoogle } = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
   const from = location.state?.from?.pathname || "/";
@@ -48,6 +48,13 @@ const Login = () => {
       })
       .catch((error) => console.log(error));
   };
+  //google sign in
+  const googleSignIn = () => {
+    signinGoogle()
+    .then(res => console.log(res))
+    .catch(error =>console.log(error))
+  };
+
 
   return (
     <>
@@ -106,6 +113,18 @@ const Login = () => {
                   />
                 </div>
               </form>
+              {/* google sign in btn */}
+              <div className="flex justify-center ">
+                <button onClick={googleSignIn} className="px-4 py-2 border flex gap-2 border-slate-200 rounded-lg text-slate-700 hover:border-slate-400 hover:text-slate-900 hover:shadow transition duration-150">
+                  <img
+                    className="w-6 h-6"
+                    src="https://www.svgrepo.com/show/475656/google-color.svg"
+                    loading="lazy"
+                    alt="google logo"
+                  />
+                  <span>Login with Google</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
