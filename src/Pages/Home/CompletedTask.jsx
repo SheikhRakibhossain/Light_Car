@@ -26,7 +26,7 @@ const CompletedTask = () => {
   const electric = projects.filter(
     (project) => project.category === "Electric"
   );
-  console.log("I am from color", color, engine, fullCarRepair, electric);
+  // console.log("I am from color", color, engine, fullCarRepair, electric);
 
   return (
     <>

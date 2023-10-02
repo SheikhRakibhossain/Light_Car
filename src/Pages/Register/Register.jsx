@@ -3,6 +3,8 @@ import { AuthContext } from "../../AuthProvider/AuthProvider";
 import registerImg from '../../assets/images/login/login.svg';
 import {Link} from 'react-router-dom'
 import ReCAPTCHA from "react-google-recaptcha";
+import Swal from 'sweetalert2'
+
 
 
 const Register = () => {
@@ -14,7 +16,8 @@ const Register = () => {
   }
   //captha verify function ended
 
-    const {createUser} = useContext(AuthContext)
+    const {createUser, updateUserProfile} = useContext(AuthContext);
+
   const handleRegister = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -23,12 +26,24 @@ const Register = () => {
     const email = form.email.value;
     const password = form.password.value;
     // const { name, photoURL, email, password } = user;
-    console.log(name, email, password, photoURL);
+    console.log("before register info", name, photoURL);
     createUser(email, password)
-    // .then(res => res.json())
     .then(data =>{
         const users = data.user;
-        console.log(users)
+        console.log('i users',users);
+        updateUserProfile(name, photoURL )
+        .then(res=>{
+          console.log("user profile info", res)
+          form.reset('')
+          Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'User Profile has been saved',
+            showConfirmButton: false,
+            timer: 1500
+          })
+        })
+        .catch(error =>console.log(error))
     })
     .catch(error=>console.log(error))
   };
@@ -60,7 +75,7 @@ const Register = () => {
                     <span className="label-text">Photo URL</span>
                   </label>
                   <input
-                    type="text"
+                    type="URL"
                     name="photoURL"
                     placeholder="Photo URL"
                     className="input input-bordered"
@@ -95,7 +110,7 @@ const Register = () => {
                       Forgot password?
                     </a>
                     <Link to='/login' className="label-text-alt link link-hover">
-                    Already have an account? please <span className="text-orange-600">Login</span>
+                    Already have an account? please <span className="text-orange-600 font-semibold">Login</span>
                     </Link>
                   </label>
                 </div>
@@ -103,7 +118,7 @@ const Register = () => {
                 <div className="form-control mt-6">
                   <input
                     type="submit"
-                    value="Login"
+                    value="Register"
                     className="btn btn-primary"
                     disabled={!verify}
 
