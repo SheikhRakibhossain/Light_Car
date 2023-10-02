@@ -3,17 +3,26 @@ import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/icons/car-logo.svg";
 import { useContext } from "react";
 import { AuthContext } from "../../AuthProvider/AuthProvider";
+import {ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Header = () => {
   const { user, logOut } = useContext(AuthContext);
 
   const handleLogOut = () => {
     logOut()
-      .then(()=>{
-        localStorage.removeItem('service-access-token')
+      .then(() => {
+        localStorage.removeItem("service-access-token");
+        toast.success('Logout successful!', {
+          position: 'top-right', // You can change the position as needed
+          autoClose: 2000, // Auto-close the toast after 3 seconds (adjust as needed)
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+        });
+      
       })
       .catch((error) => console.log(error));
-      
   };
 
   const options = (
@@ -41,7 +50,7 @@ const Header = () => {
             <Link onClick={handleLogOut}>Log Out</Link>
           </li>
           <li>
-            <NavLink to='/booking'>Bookings</NavLink>
+            <NavLink to="/booking">Bookings</NavLink>
           </li>
         </>
       ) : (
@@ -59,6 +68,7 @@ const Header = () => {
   );
 
   return (
+    <>
     <div className="navbar bg-base-100 sticky top-0 z-50">
       <div className="navbar-start">
         <div className="dropdown">
@@ -85,7 +95,11 @@ const Header = () => {
             {options}
           </ul>
         </div>
-        <img className="w-20" src={logo} alt="website logo with a art car in red color" />
+        <img
+          className="w-20"
+          src={logo}
+          alt="website logo with a art car in red color"
+        />
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{options}</ul>
@@ -94,6 +108,11 @@ const Header = () => {
         <a className="btn">Button</a>
       </div>
     </div>
+
+    <ToastContainer />
+    
+    
+    </>
   );
 };
 
