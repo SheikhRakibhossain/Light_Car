@@ -32,8 +32,8 @@ const Register = () => {
         const users = data.user;
         console.log('i users',users);
         updateUserProfile(name, photoURL )
-        .then(res=>{
-          console.log("user profile info", res)
+        .then(()=>{
+          console.log("user profile info updated")
           form.reset('')
           Swal.fire({
             position: 'top-end',
